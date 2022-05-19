@@ -1,0 +1,300 @@
+
+body {
+  font-family: Vredana, sansa-serif;
+  font-size: 18px;
+}
+
+button {
+  padding: 0px;
+  background: none;
+  border: none;
+  font-family: Vredana, sansa-serif;
+  font-size: 18px;
+  color: white;
+}
+
+a {
+  color: var(--theme-main-black);
+  text-decoration: none;
+  opacity: 1;
+}
+
+input {
+  padding: .5rem;
+  border-radius: .2rem;
+  border: 1px solid #222;
+}
+
+hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 80%;
+    border: 0;
+    border-top: 1px solid rgba(0,0,0,.1);
+    box-sizing: content-box;
+    overflow: visible;
+    background-color: rgb(20, 123, 209)
+}
+
+.App {
+  text-align: center;
+}
+
+/* menubar */
+
+.mainContainer {
+  display: flex;
+  width: 100%;
+  max-height: 3rem;
+  min-height: 2rem;
+  background: rgb(40,44,48);
+  background: linear-gradient(105deg, rgba(40,44,48,1) 0%, rgba(34,42,48,0.5340511204481793) 100%);
+}
+
+.navBar {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  background-color: #222;
+  height: 100vh;
+  padding: 0rem 1rem;
+  max-width: 150px;
+}
+
+.logoC8R {
+  flex: 2;
+}
+
+.logoSmall {
+  flex: 1;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.dashButton {
+  color: white;
+  border-top: 1px solid white;
+  text-align: center;
+}
+
+.dashButton:hover {
+  background-color: #007bff;
+}
+
+#firstButton {
+  margin-top: 10rem;
+  border-top: none;
+  border-radius: .2rem .2rem .0rem .0rem;
+}
+
+#lastButton {
+  border-radius: .0rem .0rem .2rem .2rem;
+}
+
+/* login */
+
+.mainLoginC8R {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5%;
+}
+
+.imageContainer {
+  align-items: center;
+  justify-content: center;
+}
+
+.formContainer {
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  width: 20vw;
+}
+
+.image {
+  width: 40vw;
+}
+
+/* Forms */
+#loginFormContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Buttons */
+
+.card {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0.25rem;
+  font-size: .875rem;
+  line-height: 1.5;
+  border-radius: 0.2rem;
+  background-color: transparent;
+  border: 1px solid #007bff;
+  color: #007bff;
+  transition: color .15s ease-in-out,
+              background-color .15s ease-in-out,
+              border-color .15s ease-in-out,
+              box-shadow .15s ease-in-out;
+  padding-left: 20vw;
+  padding-right: 20vw;
+}
+
+.card:hover {
+  background: #007bff;
+  box-shadow: none;
+  color: white;
+}
+
+.cardHeader {
+  flex: 2;
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.cardIcon {
+  flex: 1;
+  margin: 1px;
+  padding: 1px;
+}
+
+/* dashboard */
+
+.mainDashC8R {
+  display: flex;
+  flex-direction: row;
+}
+
+.displayArea {
+  display: flex;
+  flex-direction: column;
+  flex: 5;
+}
+
+#shipmentDash {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 5rem;
+  flex-direction: column;
+}
+
+#accountC8R {
+  display: flex;
+  flex-direction: column;
+}
+
+#chartC8R {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#businessData {
+  display: flex;
+  flex: 1;
+  margin: 3rem 5rem;
+  flex-direction: column;
+}
+
+.smallChart {
+  flex: 1;
+  margin: 2rem;
+  align-items: center;
+  justify-content: center;
+  max-height: 15vh;
+  max-width: 30vw;
+}
+
+/* table */
+.tableBody {
+  display: flex;
+  flex-direction: column;
+  width: 60vw;
+}
+
+.tableRow {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  border-bottom: 1px solid #222a3031;
+  padding: 0rem 1rem;
+}
+
+.tableRow::selection {
+  background-color: #507aa9;
+  color: white;
+}
+
+#headerTableRow {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  padding: 0rem 1rem;
+}
+
+.tableRow:hover {
+  background-color: #507aa9;
+  color: white;
+}
+
+.tableHeadItem {
+  flex: 1;
+  font-weight: bold;
+  margin: 1rem 0rem 1rem 0rem;
+  justify-content: space-around;
+}
+
+.tableItem {
+  flex: 1;
+  justify-content: space-around;
+  margin: .5rem 0rem .5rem 0rem;
+}
+
+.iconNotComplete {
+  align: center;
+  margin: 1rem 1rem 1rem 1rem;
+}
+
+.iconComplete {
+  color: #507aa9;
+  align: center;
+  margin: 1rem 1rem 1rem 1rem;
+}
+.iconCircleComplete {
+  border-radius: 50%;
+  border: 3px solid #507aa9;
+  width: 3rem;
+}
+
+.iconCircleNotComplete {
+  border-radius: 50%;
+  border: 3px solid white;
+  width: 3rem;
+}
+
+/* charts */
+
+.chartHolder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 2rem;
+}
